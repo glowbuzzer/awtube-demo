@@ -30,8 +30,8 @@ export const App = () => {
                     PointsTileDefinition,
                     FramesTileDefinition,
                     AwTubeStatusTileDefinitionBuilder({
-                        showSoftwareStop: true,
-                        showToolInputs: true,
+                        showSoftwareStop: false,
+                        showToolInputs: false,
                         showToolOutputs: true
                     })
                 ]}

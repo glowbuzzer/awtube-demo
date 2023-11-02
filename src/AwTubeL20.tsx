@@ -24,7 +24,6 @@ import CLAMP_J32_J32 from "remote://static.glowbuzzer.com/assets/models/aw/awtub
 import CLAMP_J32_J25 from "remote://static.glowbuzzer.com/assets/models/aw/awtube/clamps/clamp_j32_j25.glb"
 import MONOB_M220 from "remote://static.glowbuzzer.com/assets/models/aw/awtube/monobraccios/monob_220.glb"
 import SPINDLE_M112 from "remote://static.glowbuzzer.com/assets/models/aw/awtube/spindles/spindle_112.glb"
-import { Quaternion } from "three"
 
 const definition: AwTubeRobotParts = {
     b0: Base.MM219,
@@ -64,7 +63,6 @@ const imported = [
 const loader = (name: string) => {
     const found = imported.find(i => i.url.endsWith(name))
     if (!found) {
-        console.log("not found:", name, "in", imported)
         throw new Error("not found: " + name)
     }
     return found
@@ -78,15 +76,6 @@ export const AwTubeL20 = () => {
         return null
     }
 
-    // console.log("parts", parts)
-    // return (
-    //     <group>
-    //         {Object.values(parts).map((p, index) => (
-    //             <primitive object={p.object} position={[index * 0.2, 0, 0]} />
-    //         ))}
-    //     </group>
-    // )
-    const quaternion = new Quaternion(1, 0, 0, 0)
     return (
         <AwTubeRobot parts={parts}>
             <TriadHelper size={200} />
