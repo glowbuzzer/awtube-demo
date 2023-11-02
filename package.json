@@ -1,0 +1,43 @@
+{
+  "name": "awtube-l20",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A template for a vanilla Glowbuzzer React app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "bugs": {
+    "url": "https://github.com/glowbuzzer/gbr/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.2",
+    "@glowbuzzer/awlib": "1.0.0-alpha.6",
+    "@glowbuzzer/controls": "1.10.0-alpha.3",
+    "@glowbuzzer/store": "1.10.0-alpha.3",
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.9",
+    "@types/node": "^18.18.8",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "@types/styled-components": "^5.1.29",
+    "@types/three": "^0.158.1",
+    "@vitejs/plugin-react": "^4.1.1",
+    "antd": "5.10.3",
+    "dseg": "^0.46.0",
+    "flexlayout-react": "^0.7.13",
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^6.1.0",
+    "three": "^0.158.0",
+    "three-stdlib": "^2.28.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}
