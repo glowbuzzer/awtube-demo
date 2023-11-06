@@ -9,14 +9,14 @@ dependencies:
     specifier: ^7.23.2
     version: 7.23.2
   '@glowbuzzer/awlib':
-    specifier: 1.0.0-alpha.6
-    version: 1.0.0-alpha.6(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.3)(@glowbuzzer/store@1.10.0-alpha.3)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2)
+    specifier: 1.0.0-alpha.9
+    version: 1.0.0-alpha.9(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2)
   '@glowbuzzer/controls':
-    specifier: 1.10.0-alpha.3
-    version: 1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1)
+    specifier: 1.10.0-alpha.5
+    version: 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1)
   '@glowbuzzer/store':
-    specifier: 1.10.0-alpha.3
-    version: 1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
+    specifier: 1.10.0-alpha.5
+    version: 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
   '@react-three/drei':
     specifier: ^9.88.11
     version: 9.88.11(@react-three/fiber@8.15.9)(@types/three@0.158.1)(react-dom@18.2.0)(react@18.2.0)(three@0.158.0)
@@ -794,13 +794,13 @@ packages:
     dev: false
     optional: true
 
-  /@glowbuzzer/awlib@1.0.0-alpha.6(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.3)(@glowbuzzer/store@1.10.0-alpha.3)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-mCPBhPrXI0YC/fPX/WLIRmaZmeaBFECjtE3fQK/RY8o6Y89WjAFRJK5zErU8l5KBz8RuC3LnV7QyEMzHdQY5MA==}
+  /@glowbuzzer/awlib@1.0.0-alpha.9(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-1OaIluEUicqcN6gmv131oDRLgWjWPqjmB/t391MvOpf4ZM/HqLoeLpUGg3uinfGGMwFM4ZpTW+OHwKCgNq8opQ==}
     peerDependencies:
       '@ant-design/icons': ^5.2.6
       '@babel/core': ^7.23.2
-      '@glowbuzzer/controls': 1.10.0-alpha.3
-      '@glowbuzzer/store': 1.10.0-alpha.3
+      '@glowbuzzer/controls': ^1.10.0-alpha.5
+      '@glowbuzzer/store': ^1.10.0-alpha.5
       '@react-three/drei': ^9.88.11
       '@react-three/fiber': ^8.15.9
       '@types/react': ^18.2.34
@@ -817,8 +817,8 @@ packages:
     dependencies:
       '@ant-design/icons': 5.2.6(react-dom@18.2.0)(react@18.2.0)
       '@babel/core': 7.23.2
-      '@glowbuzzer/controls': 1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1)
-      '@glowbuzzer/store': 1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
+      '@glowbuzzer/controls': 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1)
+      '@glowbuzzer/store': 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
       '@react-three/drei': 9.88.11(@react-three/fiber@8.15.9)(@types/three@0.158.1)(react-dom@18.2.0)(react@18.2.0)(three@0.158.0)
       '@react-three/fiber': 8.15.9(react-dom@18.2.0)(react@18.2.0)(three@0.158.0)
       '@types/react': 18.2.34
@@ -837,10 +837,10 @@ packages:
       - supports-color
     dev: false
 
-  /@glowbuzzer/controls@1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1):
-    resolution: {integrity: sha512-Og7MmdK6rST8tFjLbUNWjOem/19kGBEUdK/rdYJUDuOY4LQO4FGs2eseO15xcLisaDQI9Ut3b6ABzrgaBj2KYg==}
+  /@glowbuzzer/controls@1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1):
+    resolution: {integrity: sha512-BcVJU59ychy+ODDszS5moaz58/U+hXl2FSEKhPfG3OP3Fg7oDFK6c/SSJjos7Kyb1KGpzTxr6VDhBL+mTuYI2g==}
     dependencies:
-      '@glowbuzzer/store': 1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
+      '@glowbuzzer/store': 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1)
     optionalDependencies:
       '@ant-design/icons': 5.2.6(react-dom@18.2.0)(react@18.2.0)
       '@react-three/drei': 9.88.11(@react-three/fiber@8.15.9)(@types/three@0.158.1)(react-dom@18.2.0)(react@18.2.0)(three@0.158.0)
@@ -872,8 +872,8 @@ packages:
       - redux
     dev: false
 
-  /@glowbuzzer/store@1.10.0-alpha.3(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1):
-    resolution: {integrity: sha512-qSckJfuvgBzxAdf+4KQk3K4GAdwxQdNgC9hwTPqyAM2/xOqx18lDzNhDvA3S5sZiecundpyyRwuKNxTHX0BpfA==}
+  /@glowbuzzer/store@1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(react-dom@18.2.0)(redux@4.2.1):
+    resolution: {integrity: sha512-zVpaHvXZFMfMWkuuGCzVrRDRDKq4FHR6xNoowAiLDDE+w4ufxGODqBpZZlIExbHDZ91EMam6BmXkEoRBgNuWNw==}
     optionalDependencies:
       '@reduxjs/toolkit': 1.9.7(react-redux@8.1.3)(react@18.2.0)
       react: 18.2.0

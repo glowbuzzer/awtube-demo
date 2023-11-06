@@ -2,7 +2,7 @@
   "name": "awtube-l20",
   "version": "0.0.0",
   "private": true,
-  "description": "A template for a vanilla Glowbuzzer React app",
+  "description": "Starter for an AutomationWare AwTube application",
   "license": "MIT",
   "engines": {
     "node": ">=16"
@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.23.2",
-    "@glowbuzzer/awlib": "1.0.0-alpha.6",
-    "@glowbuzzer/controls": "1.10.0-alpha.3",
-    "@glowbuzzer/store": "1.10.0-alpha.3",
+    "@glowbuzzer/awlib": "1.0.0-alpha.9",
+    "@glowbuzzer/controls": "1.10.0-alpha.5",
+    "@glowbuzzer/store": "1.10.0-alpha.5",
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
     "@types/node": "^18.18.8",
