@@ -9,7 +9,7 @@ import { PlaneShinyMetal } from "./PlaneShinyMetal"
 
 export const AwRobotSceneTile = () => {
     return (
-        <ThreeDimensionalSceneTile>
+        <ThreeDimensionalSceneTile hidePreview hideTrace>
             <AwTubeL20 />
             <Environment files="/assets/environment/aerodynamics_workshop_1k.hdr" />
             <PlaneShinyMetal />
