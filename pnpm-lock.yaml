@@ -9,8 +9,8 @@ dependencies:
     specifier: ^7.23.2
     version: 7.23.2
   '@glowbuzzer/awlib':
-    specifier: 1.0.0-alpha.9
-    version: 1.0.0-alpha.9(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2)
+    specifier: 1.0.0-alpha.10
+    version: 1.0.0-alpha.10(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2)
   '@glowbuzzer/controls':
     specifier: 1.10.0-alpha.5
     version: 1.10.0-alpha.5(@types/react-dom@18.2.14)(@types/react@18.2.34)(@types/three@0.158.1)(react-dom@18.2.0)(redux@4.2.1)
@@ -794,8 +794,8 @@ packages:
     dev: false
     optional: true
 
-  /@glowbuzzer/awlib@1.0.0-alpha.9(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-1OaIluEUicqcN6gmv131oDRLgWjWPqjmB/t391MvOpf4ZM/HqLoeLpUGg3uinfGGMwFM4ZpTW+OHwKCgNq8opQ==}
+  /@glowbuzzer/awlib@1.0.0-alpha.10(@ant-design/icons@5.2.6)(@babel/core@7.23.2)(@glowbuzzer/controls@1.10.0-alpha.5)(@glowbuzzer/store@1.10.0-alpha.5)(@react-three/drei@9.88.11)(@react-three/fiber@8.15.9)(@types/react@18.2.34)(@types/three@0.158.1)(esbuild@0.19.5)(prettier@3.0.3)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.0)(three-stdlib@2.28.3)(three@0.158.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-Gfs6z1XKvhZWSP8GB4HCgEeuYyFm7/2lhrHMQUf4xCtISqGXFn9lofPhVIS2mo6wwWsL4v17dlxCDZT2+odSmQ==}
     peerDependencies:
       '@ant-design/icons': ^5.2.6
       '@babel/core': ^7.23.2
