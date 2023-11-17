@@ -7,7 +7,7 @@ import { App, get_codesandbox_websocket_url } from "./App"
 import "antd/dist/reset.css"
 import "dseg/css/dseg.css"
 import "flexlayout-react/style/light.css"
-// import { config } from "./config"
+import { appReducers } from "./store"
 
 const root = createRoot(document.getElementById("root")!)
 const codesandbox = !!get_codesandbox_websocket_url()
@@ -15,7 +15,11 @@ const codesandbox = !!get_codesandbox_websocket_url()
 import config from "../.codesandbox/gbc_config.json"
 
 root.render(
-    <GlowbuzzerApp appName="awtube-demo" configuration={codesandbox ? undefined : config}>
+    <GlowbuzzerApp
+        appName="awtube-demo"
+        configuration={codesandbox ? undefined : config}
+        additionalReducers={appReducers}
+    >
         <App />
     </GlowbuzzerApp>
 )

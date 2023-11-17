@@ -2,21 +2,32 @@
  * Copyright (c) 2023. Glowbuzzer. All rights reserved
  */
 
-import { GlowbuzzerConfig, JOINT_MODEOFOPERATION, JOINT_TORQUE_MODE } from "@glowbuzzer/store"
+import {
+    GlowbuzzerConfig,
+    JOINT_MODEOFOPERATION,
+    JOINT_TORQUE_MODE,
+    POSITIONREFERENCE
+} from "@glowbuzzer/store"
 import {
     AwTubeL20InverseDynamicParams,
     AwTubeL20KinChainParams,
     StandardAwTubeConfiguration
 } from "@glowbuzzer/awlib"
 
-let _config: GlowbuzzerConfig = {
+const DEFAULT_JOINT_LIMITS = {
+    vmax: 1.25,
+    amax: 12.5,
+    jmax: 125
+}
+
+const _config: GlowbuzzerConfig = {
     ...StandardAwTubeConfiguration,
     machine: [
         {
             name: "AWTUBE L20",
             busCycleTime: 4,
             heartbeatTimeout: 10000,
-            statusFrequency: 200
+            statusFrequency: 100
         }
     ],
     points: [
@@ -57,26 +68,28 @@ let _config: GlowbuzzerConfig = {
             translation: {
                 x: 0,
                 y: 0,
-                z: 117
+                z: 517
+            }
+        },
+        {
+            name: "Pallet",
+            translation: {
+                x: 400,
+                y: 0,
+                z: 0
             }
         }
     ],
     joint: [
         {
             name: "0",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 3.414,
             jointType: 1,
-            negLimit: -80,
-            posLimit: 80,
+            negLimit: -180,
+            posLimit: 180,
             inverted: true,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
@@ -87,19 +100,13 @@ let _config: GlowbuzzerConfig = {
         },
         {
             name: "1",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 2.54,
             jointType: 1,
-            negLimit: -40,
-            posLimit: 40,
+            negLimit: -90,
+            posLimit: 90,
             inverted: true,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
@@ -108,19 +115,13 @@ let _config: GlowbuzzerConfig = {
         },
         {
             name: "2",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 4.3,
             jointType: 1,
-            negLimit: 50,
-            posLimit: 130,
+            negLimit: -45,
+            posLimit: 225,
             inverted: false,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
@@ -129,13 +130,7 @@ let _config: GlowbuzzerConfig = {
         },
         {
             name: "3",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 4.3,
@@ -150,19 +145,13 @@ let _config: GlowbuzzerConfig = {
         },
         {
             name: "4",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 3.414,
             jointType: 1,
-            negLimit: 10,
-            posLimit: 170,
+            negLimit: -90,
+            posLimit: 270,
             inverted: true,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
@@ -171,13 +160,7 @@ let _config: GlowbuzzerConfig = {
         },
         {
             name: "5",
-            limits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            limits: [DEFAULT_JOINT_LIMITS],
             scalePos: 166886,
             scaleVel: 9549,
             scaleTorque: 16.07,
@@ -201,30 +184,16 @@ let _config: GlowbuzzerConfig = {
             supportedConfigurationBits: 7,
             extentsX: [-1000, 1000],
             extentsY: [-1000, 1000],
-            extentsZ: [500, 2000],
-            sphericalEnvelope: {
-                center: {
-                    x: 0,
-                    y: 0,
-                    z: 0
-                },
-                radius: [500, 1400]
-            },
+            extentsZ: [-1000, 2000],
             linearLimits: [
                 {
-                    vmax: 10,
-                    amax: 200,
-                    jmax: 4000
+                    vmax: 300,
+                    amax: 6000,
+                    jmax: 120000
                 }
             ],
 
-            angularLimits: [
-                {
-                    vmax: 0.05,
-                    amax: 0.5,
-                    jmax: 5
-                }
-            ],
+            angularLimits: [DEFAULT_JOINT_LIMITS],
             ...AwTubeL20KinChainParams,
             inverseDynamicParams: AwTubeL20InverseDynamicParams
         }

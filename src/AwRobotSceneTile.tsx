@@ -7,11 +7,22 @@ import { AwTubeL20 } from "./AwTubeL20"
 import { Environment } from "@react-three/drei"
 import { PlaneShinyMetal } from "./PlaneShinyMetal"
 import { LightCurtain } from "./LightCurtain"
+import { CardboardBox } from "./scene/CardboardBox"
+import { Conveyor } from "./scene/Conveyor"
+import { useAppState } from "./store"
+import { Pallet } from "./scene/Pallet"
+import { Pillar } from "./scene/Pillar"
 
 export const AwRobotSceneTile = () => {
+    const { pick } = useAppState()
+
     return (
         <ThreeDimensionalSceneTile hidePreview hideTrace>
-            <AwTubeL20 />
+            <Conveyor />
+            <Pillar>
+                <AwTubeL20>{pick && <CardboardBox position={[0, 0, 75]} />}</AwTubeL20>
+            </Pillar>
+            <Pallet />
             <Environment files="/assets/environment/aerodynamics_workshop_1k.hdr" />
             <PlaneShinyMetal />
             <LightCurtain />
