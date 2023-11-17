@@ -4,6 +4,7 @@ import {
     ConnectTileDefinition,
     DockLayout,
     DockLayoutProvider,
+    DockTileDefinitionBuilder,
     EmStatTileDefinition,
     FeedRateTileDefinition,
     FramesTileDefinition,
@@ -19,6 +20,7 @@ import { AppMenu } from "./AppMenu"
 import { AwTubeStatusTileDefinitionBuilder, RgbStateHandler } from "@glowbuzzer/awlib"
 import { SimpleMoveTileDefinition } from "./SimpleMoveTile"
 import { usePrefs } from "@glowbuzzer/store"
+import { PalletisingTile } from "./PalletisingTile"
 
 export function get_codesandbox_websocket_url() {
     const hostname = window.location.hostname
@@ -27,6 +29,13 @@ export function get_codesandbox_websocket_url() {
         return wss
     }
 }
+
+const PalletisingTileDefinition = DockTileDefinitionBuilder()
+    .id("palletising")
+    .name("Palletising")
+    .placement(2, 1)
+    .render(() => <PalletisingTile />)
+    .build()
 
 export const App = () => {
     const { update } = usePrefs()
@@ -61,7 +70,8 @@ export const App = () => {
                     }),
                     SimpleMoveTileDefinition,
                     JointTorqueModesTileDefinition,
-                    EmStatTileDefinition
+                    EmStatTileDefinition,
+                    PalletisingTileDefinition
                 ]}
             >
                 <AppMenu />

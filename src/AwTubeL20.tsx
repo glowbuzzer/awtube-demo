@@ -68,7 +68,7 @@ const loader = (name: string) => {
     return found
 }
 
-export const AwTubeL20 = () => {
+export const AwTubeL20 = ({ children }) => {
     const parts = useLoadedRobotPartsWithEmbeddedAssets(definition, loader)
 
     if (!parts) {
@@ -76,9 +76,5 @@ export const AwTubeL20 = () => {
         return null
     }
 
-    return (
-        <AwTubeRobot parts={parts}>
-            <TriadHelper size={200} />
-        </AwTubeRobot>
-    )
+    return <AwTubeRobot parts={parts}>{children}</AwTubeRobot>
 }

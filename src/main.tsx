@@ -8,12 +8,17 @@ import "antd/dist/reset.css"
 import "dseg/css/dseg.css"
 import "flexlayout-react/style/light.css"
 import { config } from "./config"
+import { appReducers } from "./store"
 
 const root = createRoot(document.getElementById("root")!)
 const codesandbox = !!get_codesandbox_websocket_url()
 
 root.render(
-    <GlowbuzzerApp appName="awtube-demo" configuration={codesandbox ? undefined : config}>
+    <GlowbuzzerApp
+        appName="awtube-demo"
+        configuration={codesandbox ? undefined : config}
+        additionalReducers={appReducers}
+    >
         <App />
     </GlowbuzzerApp>
 )
