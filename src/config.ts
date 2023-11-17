@@ -9,16 +9,14 @@ import {
     StandardAwTubeConfiguration
 } from "@glowbuzzer/awlib"
 
-/**
- * This is the configuration for the AWTUBE L machine that can be pushed to the control if needed
- * (for example on first start)
- */
-export const config: GlowbuzzerConfig = {
+let _config: GlowbuzzerConfig = {
     ...StandardAwTubeConfiguration,
     machine: [
         {
             name: "AWTUBE L20",
-            busCycleTime: 4
+            busCycleTime: 4,
+            heartbeatTimeout: 10000,
+            statusFrequency: 200
         }
     ],
     points: [
@@ -232,3 +230,8 @@ export const config: GlowbuzzerConfig = {
         }
     ]
 }
+/**
+ * This is the configuration for the AWTUBE L machine that can be pushed to the control if needed
+ * (for example on first start)
+ */
+export const config = _config
