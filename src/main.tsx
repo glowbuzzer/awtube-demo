@@ -13,6 +13,8 @@ const root = createRoot(document.getElementById("root")!)
 const codesandbox = !!get_codesandbox_websocket_url()
 
 import config from "../.codesandbox/gbc_config.json"
+import { config as x } from "./config"
+console.log(x)
 
 root.render(
     <GlowbuzzerApp

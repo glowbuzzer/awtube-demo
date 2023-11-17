@@ -90,25 +90,22 @@
   ],
   "frames": [
     {
-      "name": "World",
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      }
+      "name": "World"
     },
     {
       "name": "Robot",
       "translation": {
         "x": 0,
         "y": 0,
-        "z": 117
+        "z": 517
+      }
+    },
+    {
+      "name": "Pallet",
+      "translation": {
+        "x": 400,
+        "y": 0,
+        "z": 0
       }
     }
   ],
@@ -117,9 +114,9 @@
       "name": "0",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
@@ -136,9 +133,9 @@
       "name": "1",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
@@ -155,17 +152,17 @@
       "name": "2",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
       "scaleVel": 9549,
       "scaleTorque": 4.3,
       "jointType": 1,
-      "negLimit": -30,
-      "posLimit": 210,
+      "negLimit": -45,
+      "posLimit": 225,
       "inverted": false,
       "supportedModes": 5,
       "supportedTorqueModes": 1
@@ -174,17 +171,17 @@
       "name": "3",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
       "scaleVel": 9549,
       "scaleTorque": 4.3,
       "jointType": 1,
-      "negLimit": -180,
-      "posLimit": 180,
+      "negLimit": -170,
+      "posLimit": 170,
       "inverted": true,
       "supportedModes": 5,
       "supportedTorqueModes": 1
@@ -193,17 +190,17 @@
       "name": "4",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
       "scaleVel": 9549,
       "scaleTorque": 3.414,
       "jointType": 1,
-      "negLimit": -45,
-      "posLimit": 225,
+      "negLimit": -90,
+      "posLimit": 270,
       "inverted": true,
       "supportedModes": 5,
       "supportedTorqueModes": 1
@@ -212,9 +209,9 @@
       "name": "5",
       "limits": [
         {
-          "vmax": 0.2,
-          "amax": 2,
-          "jmax": 20
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "scalePos": 166886,
@@ -238,19 +235,19 @@
       "supportedConfigurationBits": 7,
       "extentsX": [-1000, 1000],
       "extentsY": [-1000, 1000],
-      "extentsZ": [0, 2000],
+      "extentsZ": [-1000, 2000],
       "linearLimits": [
         {
-          "vmax": 200,
-          "amax": 1000,
-          "jmax": 20000
+          "vmax": 300,
+          "amax": 6000,
+          "jmax": 120000
         }
       ],
       "angularLimits": [
         {
-          "vmax": 0.25,
-          "amax": 2.5,
-          "jmax": 25
+          "vmax": 1.25,
+          "amax": 12.5,
+          "jmax": 125
         }
       ],
       "velocityScaling": {
