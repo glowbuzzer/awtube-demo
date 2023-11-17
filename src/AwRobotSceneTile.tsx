@@ -6,6 +6,7 @@ import {
 import { AwTubeL20 } from "./AwTubeL20"
 import { Environment } from "@react-three/drei"
 import { PlaneShinyMetal } from "./PlaneShinyMetal"
+import { LightCurtain } from "./LightCurtain"
 
 export const AwRobotSceneTile = () => {
     return (
@@ -13,6 +14,7 @@ export const AwRobotSceneTile = () => {
             <AwTubeL20 />
             <Environment files="/assets/environment/aerodynamics_workshop_1k.hdr" />
             <PlaneShinyMetal />
+            <LightCurtain />
         </ThreeDimensionalSceneTile>
     )
 }

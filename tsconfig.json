@@ -4,6 +4,7 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
     }
 }

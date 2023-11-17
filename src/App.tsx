@@ -2,6 +2,8 @@ import {
     CartesianDroTileDefinition,
     CartesianJogTileDefinition,
     ConnectTileDefinition,
+    DigitalInputsTileDefinition,
+    DigitalOutputsTileDefinition,
     DockLayout,
     DockLayoutProvider,
     EmStatTileDefinition,
@@ -61,7 +63,9 @@ export const App = () => {
                     }),
                     SimpleMoveTileDefinition,
                     JointTorqueModesTileDefinition,
-                    EmStatTileDefinition
+                    EmStatTileDefinition,
+                    DigitalInputsTileDefinition,
+                    DigitalOutputsTileDefinition
                 ]}
             >
                 <AppMenu />

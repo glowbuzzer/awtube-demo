@@ -22,7 +22,7 @@
       "name": "Tool 2"
     },
     {
-      "name": "SPARE 1"
+      "name": "Light Curtain"
     }
   ],
   "dout": [
@@ -48,7 +48,8 @@
       "name": "Tool 2"
     },
     {
-      "name": "SPARE 2"
+      "name": "Light Curtain (loopback)",
+      "loopback": 7
     }
   ],
   "stream": [
@@ -252,6 +253,13 @@
           "jmax": 25
         }
       ],
+      "velocityScaling": {
+        "enabled": true,
+        "trigger": {
+          "input": 7
+        },
+        "scaleFactor": 0.2
+      },
       "kinChainParams": {
         "numRows": 6,
         "numCols": 5,
