@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.23.2",
-    "@glowbuzzer/awlib": "1.0.0-alpha.14",
+    "@glowbuzzer/awlib": "1.0.0-alpha.15",
     "@glowbuzzer/controls": "1.10.0",
     "@glowbuzzer/store": "1.10.0",
     "@react-three/drei": "^9.88.11",
