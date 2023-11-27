@@ -19,7 +19,7 @@ const _config: GlowbuzzerConfig = {
     ...StandardAwTubeConfiguration,
     machine: [
         {
-            name: "AWTUBE L20",
+            name: "AWTUBE L2",
             busCycleTime: 4,
             heartbeatTimeout: 10000,
             statusFrequency: 100
