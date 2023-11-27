@@ -71,7 +71,7 @@ const loader = (name: string) => {
     return found
 }
 
-export const AwTubeL2 = ({ children }) => {
+export const AwTubeL2 = ({ children = null }) => {
     const parts = useLoadedRobotPartsWithEmbeddedAssets(definition, loader)
 
     if (!parts) {
