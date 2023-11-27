@@ -3,14 +3,14 @@ import {
     ThreeDimensionalSceneTile,
     ThreeDimensionalSceneTileDefinition
 } from "@glowbuzzer/controls"
-import { AwTubeL20 } from "./AwTubeL20"
+import { AwTubeL2 } from "./AwTubeL2"
 import { Environment } from "@react-three/drei"
 import { PlaneShinyMetal } from "./PlaneShinyMetal"
 
 export const AwRobotSceneTile = () => {
     return (
         <ThreeDimensionalSceneTile hidePreview hideTrace>
-            <AwTubeL20 />
+            <AwTubeL2 />
             <Environment files="/assets/environment/aerodynamics_workshop_1k.hdr" />
             <PlaneShinyMetal />
         </ThreeDimensionalSceneTile>
