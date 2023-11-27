@@ -22,7 +22,7 @@ const _config: GlowbuzzerConfig = {
             name: "AWTUBE L20",
             busCycleTime: 4,
             heartbeatTimeout: 10000,
-            statusFrequency: 200
+            statusFrequency: 100
         }
     ],
     points: [

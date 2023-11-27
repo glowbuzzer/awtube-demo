@@ -1,5 +1,5 @@
 {
-  "name": "awtube-l20",
+  "name": "awtube-demo",
   "version": "0.0.0",
   "private": true,
   "description": "Starter for an AutomationWare AwTube application",
@@ -17,8 +17,8 @@
   "dependencies": {
     "@babel/core": "^7.23.2",
     "@glowbuzzer/awlib": "1.0.0-alpha.13",
-    "@glowbuzzer/controls": "1.10.0-alpha.6",
-    "@glowbuzzer/store": "1.10.0-alpha.6",
+    "@glowbuzzer/controls": "1.10.0",
+    "@glowbuzzer/store": "1.10.0",
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
     "@types/node": "^18.18.8",
