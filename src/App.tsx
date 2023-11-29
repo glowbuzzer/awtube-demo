@@ -4,40 +4,37 @@ import {
     ConnectTileDefinition,
     DockLayout,
     DockLayoutProvider,
+    DockTileDefinitionBuilder,
     EmStatTileDefinition,
     FeedRateTileDefinition,
     FramesTileDefinition,
+    IntegerOutputsTileDefinition,
     JointDroTileDefinition,
     JointJogTileDefinition,
     JointTorqueModesTileDefinition,
     PointsTileDefinition,
-    TelemetryTileDefinition
+    TelemetryTileDefinition,
+    ThreeDimensionalSceneTileDefinition
 } from "@glowbuzzer/controls"
 import * as React from "react"
-import { AwRobotSceneTileDefinition } from "./AwRobotSceneTile"
+import { AwRobotSceneTile } from "./tiles/AwRobotSceneTile"
 import { AppMenu } from "./AppMenu"
 import { AwTubeStatusTileDefinitionBuilder, RgbStateHandler } from "@glowbuzzer/awlib"
-import { SimpleMoveTileDefinition } from "./SimpleMoveTile"
-import { usePrefs } from "@glowbuzzer/store"
+import { SimpleMoveTile } from "./tiles/SimpleMoveTile"
+import { useCodeSandbox } from "./util"
 
-export function get_codesandbox_websocket_url() {
-    const hostname = window.location.hostname
-    if (hostname.indexOf("csb.app") > 0) {
-        const wss = `wss://${hostname.replace("5173", "9001")}/ws`
-        return wss
-    }
-}
+const AwRobotSceneTileDefinition = DockTileDefinitionBuilder(ThreeDimensionalSceneTileDefinition)
+    .render(() => <AwRobotSceneTile />)
+    .build()
+
+const SimpleMoveTileDefinition = DockTileDefinitionBuilder()
+    .id("aw-simple-move")
+    .name("Simple Move")
+    .render(() => <SimpleMoveTile />)
+    .build()
 
 export const App = () => {
-    const { update } = usePrefs()
-    React.useEffect(() => {
-        // set the connect url to the GBC running in the docker container alongside vite but on port 9001
-        const url = get_codesandbox_websocket_url()
-        if (url) {
-            // we're running in codesandbox
-            update("url", url)
-        }
-    }, [])
+    useCodeSandbox()
 
     return (
         <>
@@ -61,7 +58,8 @@ export const App = () => {
                     }),
                     SimpleMoveTileDefinition,
                     JointTorqueModesTileDefinition,
-                    EmStatTileDefinition
+                    EmStatTileDefinition,
+                    IntegerOutputsTileDefinition
                 ]}
             >
                 <AppMenu />

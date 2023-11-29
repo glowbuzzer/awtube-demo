@@ -179,7 +179,7 @@ const _config: GlowbuzzerConfig = {
             supportedConfigurationBits: 7,
             extentsX: [-1000, 1000],
             extentsY: [-1000, 1000],
-            extentsZ: [-1000, 2000],
+            extentsZ: [-17, 2000],
             linearLimits: [
                 {
                     vmax: 300,
@@ -191,6 +191,11 @@ const _config: GlowbuzzerConfig = {
             angularLimits: [DEFAULT_JOINT_LIMITS],
             ...AwTubeL2KinChainParams,
             inverseDynamicParams: AwTubeL2InverseDynamicParams
+        }
+    ],
+    iout: [
+        {
+            name: "led"
         }
     ]
 }
