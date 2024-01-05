@@ -86,6 +86,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -180,
             posLimit: 180,
             inverted: true,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,
@@ -103,6 +104,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -90,
             posLimit: 90,
             inverted: true,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,
@@ -118,6 +120,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -45,
             posLimit: 225,
             inverted: false,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,
@@ -133,6 +136,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -170,
             posLimit: 170,
             inverted: true,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,
@@ -148,6 +152,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -90,
             posLimit: 270,
             inverted: true,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,
@@ -163,6 +168,7 @@ const _config: GlowbuzzerConfig = {
             negLimit: -270,
             posLimit: 270,
             inverted: true,
+            preferredMode: JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP,
             supportedModes:
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CSP |
                 JOINT_MODEOFOPERATION.JOINT_MODEOFOPERATION_CST,

@@ -22,6 +22,7 @@ import { AppMenu } from "./AppMenu"
 import { AwTubeStatusTileDefinitionBuilder, RgbStateHandler } from "@glowbuzzer/awlib"
 import { SimpleMoveTile } from "./tiles/SimpleMoveTile"
 import { useCodeSandbox } from "./util"
+import { InterpolatedMoveTile } from "./tiles/InterpolatedMoveTile"
 
 const AwRobotSceneTileDefinition = DockTileDefinitionBuilder(ThreeDimensionalSceneTileDefinition)
     .render(() => <AwRobotSceneTile />)
@@ -30,7 +31,15 @@ const AwRobotSceneTileDefinition = DockTileDefinitionBuilder(ThreeDimensionalSce
 const SimpleMoveTileDefinition = DockTileDefinitionBuilder()
     .id("aw-simple-move")
     .name("Simple Move")
+    .placement(2, 1)
     .render(() => <SimpleMoveTile />)
+    .build()
+
+const InterpolatedMoveTileDefinition = DockTileDefinitionBuilder()
+    .id("aw-interpolated-move")
+    .name("Interpolated Move")
+    .placement(2, 1)
+    .render(() => <InterpolatedMoveTile />)
     .build()
 
 export const App = () => {
@@ -41,6 +50,13 @@ export const App = () => {
             <RgbStateHandler />
             <DockLayoutProvider
                 tiles={[
+                    AwTubeStatusTileDefinitionBuilder({
+                        showSoftwareStop: false,
+                        showToolInputs: false,
+                        showToolOutputs: true
+                    }),
+                    SimpleMoveTileDefinition,
+                    InterpolatedMoveTileDefinition,
                     ConnectTileDefinition,
                     AwRobotSceneTileDefinition,
                     CartesianDroTileDefinition,
@@ -51,12 +67,6 @@ export const App = () => {
                     PointsTileDefinition,
                     FramesTileDefinition,
                     FeedRateTileDefinition,
-                    AwTubeStatusTileDefinitionBuilder({
-                        showSoftwareStop: false,
-                        showToolInputs: false,
-                        showToolOutputs: true
-                    }),
-                    SimpleMoveTileDefinition,
                     JointTorqueModesTileDefinition,
                     EmStatTileDefinition,
                     IntegerOutputsTileDefinition

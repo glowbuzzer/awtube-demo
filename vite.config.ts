@@ -4,8 +4,8 @@
 
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
-import { remoteImport } from "./plugins/remote-import"
+import { viteDracoPlugin } from "./vite-draco-plugin"
 
 export default defineConfig({
-    plugins: [react(), remoteImport()]
+    plugins: [react(), viteDracoPlugin()]
 })
